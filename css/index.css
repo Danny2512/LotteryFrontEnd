@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+main, header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    text-align: center;
+}
+
+header > h1 {
+    color: #292D60;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.template_button {
+    display: block;
+    position: relative;
+    width: 300px;
+    max-width: 100%;
+    margin: 1vh;
+    background: #292D60;
+    color: #ffff;
+    border: none;
+    border-radius: 2vh;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: .8rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.template_button:hover {
+    transform: scale(0.9);
+}
+
+.template_button.green[disabled] {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.template_button.green {
+    background: #06853C;
+}
+
+.template_button.red {
+    background: #CF1C1C;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #000;
+}
+
+.socialNetworks > img {
+    width: 20px;
+    margin: 1vh;
+}
+
+.links {
+    margin: 1vh;
+}
+
+.links > a {
+    color: #000;
+    margin: 1vh;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+footer > span {
+    margin: 1vh;
+    font-weight: 400;
+    color: #292D60;
+}
