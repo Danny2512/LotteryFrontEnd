@@ -1,10 +1,15 @@
 $(document).ready(() => {
     $('#generateLotery').click(() => {
-        fetch('http://soluciones.cotrafasocial.com.co:3000/lottery/generateLottery')
+        // Deshabilitar el botón
+        $('#generateLotery').prop("disabled", true);
+
+        fetch('https://soluciones.cotrafasocial.com.co/lottery/generateLottery')
             .then(response => response.json())
             .then(data => {
-                // Aquí puedes manejar los datos de respuesta, si es necesario.
                 alert(data.message);
+                setTimeout(() => {
+                    window.location.href = 'https://www.cotrafasocial.com/';
+                }, 5000);
             })
             .catch(error => {
                 console.error('Error al obtener los datos:', error);
